@@ -1,0 +1,126 @@
+ <html>
+<head>
+  <title>Resume Maker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script language="javascript" type="text/javascript" src="app.js"></script>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="container text-center">
+    <div class="well">
+      <h1>My Resume</h1>
+    </div>
+    <div class="information">
+      <form id="resume" action="main.html" method="post">
+        <div id="person_info">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="row">
+            <div class="col-25">
+              <label>Name:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="name" placeholder="Enter your name" required>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>Address:</label>
+            </div>
+            <div class="col-75">
+              <textarea rows="2" cols="30" placeholder="Enter your address" required></textarea>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>Contact:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="contact" placeholder="Enter your number" pattern="[7-9]{1}[0-9]{9}" required>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>Email ID:</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="email" placeholder="Enter your email id" required>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>Image URL:</label>
+            </div>
+            <div class="col-75">
+              <input type="file" id="image" style="margin-left:26px;" required>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>Objective:</label>
+            </div>
+            <div class="col-75">
+              <textarea rows="2" cols="30" placeholder="What is your Objective" required></textarea>
+              </div>
+          </div>
+        </fieldset>
+      </div>
+      <br>
+      <hr class="horizontal_line">
+        <div id="academics">
+        <fieldset>
+          <legend>Academic Qualification</legend>
+          <div class="row">
+            <div class="col-25">
+              <label>Specialization:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="specialization" placeholder="Enter your specialization" required>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>Experience:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="experience" placeholder="Enter your Experience details">
+              </div>
+          </div>
+          <!--
+          <div class="row">
+       <div class="col-25">
+         <label for="country">Technical Skills:</label>
+       </div>
+       <div class="col-75">
+         <select id="languages" name="laguages" multiple>
+           <option value="Select">Select Language</option>
+           <option value="html">HTML</option>
+           <option value="css">CSS</option>
+           <option value="js">Javascript</option>
+           <option value="angular">Angular</option>
+           <option value="react">React</option>
+           <option value="python">Python</option>
+           <option value="php">PHP</option>
+           <option value="expressjs">ExpressJS</option>
+           <option value="Java">Java</option>
+           <option value="asp">Asp .Net</option>
+           <option value="android">Android</option>
+         </select>
+       </div>
+     </div>-->
+
+        </fieldset>
+      </div>
+      <br>
+      <div class="row">
+        <div class="text-center">
+          <input type="submit" id="submit-btn" class="btn btn-success" onClick="showResume()" value="SUBMIT">
+          </div>
+      </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
