@@ -13,7 +13,7 @@
       <h1>My Resume</h1>
     </div>
     <div class="information">
-      <form id="resume" action="main.html" method="post">
+      <form id="resume" onSubmit="showResume()" method="post">
         <div id="person_info">
         <fieldset>
           <legend>Personal Information</legend>
@@ -30,7 +30,7 @@
               <label>Address:</label>
             </div>
             <div class="col-75">
-              <textarea rows="2" cols="30" placeholder="Enter your address" required></textarea>
+              <textarea rows="2" cols="30" id="myAddress" placeholder="Enter your address" required></textarea>
               </div>
           </div>
           <div class="row">
@@ -62,7 +62,7 @@
               <label>Objective:</label>
             </div>
             <div class="col-75">
-              <textarea rows="2" cols="30" placeholder="What is your Objective" required></textarea>
+              <textarea rows="2" cols="30" id="obj" placeholder="What is your Objective" required></textarea>
               </div>
           </div>
         </fieldset>
@@ -116,7 +116,7 @@
       <br>
       <div class="row">
         <div class="text-center">
-          <input type="submit" id="submit-btn" class="btn btn-success" onClick="showResume()" value="SUBMIT">
+          <input type="submit" id="submit-btn" class="btn btn-success" value="SUBMIT">
           </div>
       </div>
       </form>
